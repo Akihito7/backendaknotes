@@ -10,7 +10,7 @@ app.use(express.json());
 const routes = require("./routes");
 app.use(routes);
 
-console.log("Hello world");
+app.use(console.log("Hello world"));
 
 const appError = require('./utils/appError');
 app.use((error, request, response, next) => {
